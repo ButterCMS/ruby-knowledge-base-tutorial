@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logoContainer">
+        <img
+          src="https://theme.zdassets.com/theme_assets/789182/2a7764f7c4eb8f84766edad7c654c021a20e7300.png"
+          height="30px"
+        />
+      </div>
+      <div class="navBox">
+        <div class="navItem">Help</div>
+        <div class="navItem active">FAQ</div>
+        <div class="navItem">Contact</div>
+        <div class="navItem">About us</div>
+      </div>
+    </nav>
+
+    <div class="faq_text">
+      <h3>Frequently Asked Questions</h3>
+      <h4>Need help? We've got you covered</h4>
+    </div>
+
+    <div class="faq_body">
+      <div class="faq_body_inner">
+        <div class="faq_category_body category">
+          <h3>Filter by Category:</h3>
+
+        </div>
+      </div>
+
+      <div class="faq_body">
+        <div class="faq_body_inner detail">
+          <h3><%= data['data']['fields']['title']%></h3>
+
+          <%= data['data']['fields']['body']%>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
